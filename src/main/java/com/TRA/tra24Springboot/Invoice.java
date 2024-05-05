@@ -1,9 +1,9 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
 import java.util.Date;
 import java.util.List;
 
-public class Invoice implements InvoiceInterface{
+public class Invoice implements InvoiceInterface {
     public int invoiceNo;
     public String customerFullName;
     public String phoneNumber;

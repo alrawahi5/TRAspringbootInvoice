@@ -1,8 +1,8 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
 import java.util.List;
 
-public class Item implements ItemInnterface{
+public class Item implements ItemInnterface {
     public double itemId;
     public String itemName;
     public double unitPrice;
@@ -50,7 +50,7 @@ public class Item implements ItemInnterface{
                 '}';
     }
 
-    static int itemsQuatity(List<Item> items) {
+    public static int itemsQuatity(List<Item> items) {
         int quantity = 0;
         for (Item i : items) {
             quantity += i.quantity;

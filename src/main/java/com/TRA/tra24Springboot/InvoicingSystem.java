@@ -1,11 +1,11 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
+
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InvoicingSystem {
     private static ShopSettings shopSettings;
@@ -93,10 +93,10 @@ public class InvoicingSystem {
         Menue.invoice1.phoneNumber = phoneNumber;
         invoice1.setPhoneNumber(phoneNumber);
 
-        while (phoneNumber == null){
+        while (phoneNumber == null) {
             try {
                 System.out.println("Enter your phone number: ");
-                phoneNumber   = scanner.nextLine();
+                phoneNumber = scanner.nextLine();
 
                 if (!isValidPhoneN(phoneNumber)) {
                     throw new IllegalArgumentException("Invalid input. ");
@@ -108,8 +108,6 @@ public class InvoicingSystem {
         }
 
         Menue.addItems(scanner);
-
         Menue.showMainMenu();
-
     }
 }

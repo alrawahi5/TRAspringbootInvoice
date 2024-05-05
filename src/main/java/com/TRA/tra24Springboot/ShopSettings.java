@@ -1,9 +1,8 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
-public class ShopSettings implements ShopSettingInterface{
+public class ShopSettings implements ShopSettingInterface {
     public String shopName;
     private String invoiceHeader;
-    //... add something?
 
     public String getShopName() {
         return shopName;

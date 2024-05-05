@@ -1,4 +1,4 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ public class Menue {
     static int count1 = 1;
     public static HashMap<Integer, Integer> optionCounts;
 
-    static void showMainMenu() {
+    public static void showMainMenu() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println(MenuForOptions.mainMenu);
@@ -51,12 +51,10 @@ public class Menue {
                     default:
                         System.out.println("Invalid choice, please try again.");
                 }
-            }
-            catch (InputMismatchException e) {
+            } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter your choice number: ");
                 scanner.nextLine();
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -145,7 +143,7 @@ public class Menue {
     }
 
     static ShopSettings shopSettings1 = new ShopSettings();
-    static Invoice invoice1 = new Invoice();
+    public static Invoice invoice1 = new Invoice();
     static Item item1 = new Item();
     static Menue menu1 = new Menue();
     static InvoicingSystem invoSy1 = new InvoicingSystem();
@@ -245,7 +243,7 @@ public class Menue {
 
     }
 
-    static void addItems(Scanner scanner) {
+    public static void addItems(Scanner scanner) {
         while (true) {
             System.out.println("What are you buying? When you are done, type " + "done ");
             String input = scanner.nextLine();

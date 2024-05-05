@@ -1,4 +1,4 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
 import java.util.Date;
 import java.util.List;

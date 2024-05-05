@@ -1,4 +1,4 @@
-package MyInvoice;
+package com.TRA.tra24Springboot;
 
 import java.util.List;
 
@@ -23,9 +23,9 @@ public interface ItemInnterface {
     @Override
     String toString();
 
-    static int itemsQuatity(List<MyInvoice.Item> items) {
+    static int itemsQuatity(List<Item> items) {
         int quantity = 0;
-        for (MyInvoice.Item i : items) {
+        for (Item i : items) {
             quantity += i.quantity;
         }
         return quantity;
