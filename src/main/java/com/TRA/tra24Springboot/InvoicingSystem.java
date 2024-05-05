@@ -68,7 +68,7 @@ public class InvoicingSystem {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         String name = null;
 
         Menue.invoice1.customerFullName = name;
@@ -108,6 +108,6 @@ public class InvoicingSystem {
         }
 
         Menue.addItems(scanner);
-        Menue.showMainMenu();
+        Menue.showMainMenu();*/
     }
 }

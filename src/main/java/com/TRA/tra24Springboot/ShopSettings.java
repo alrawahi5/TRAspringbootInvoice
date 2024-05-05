@@ -28,4 +28,3 @@ public class ShopSettings implements ShopSettingInterface {
                 '}';
     }
 }
- 
